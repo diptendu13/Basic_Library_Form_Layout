@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Library System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Pacifico&family=Roboto+Condensed&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <span class="commonTextNav" id="heading">Library System</span>
+        <a class="commonTextNav" id="bookLink" href="#books">Books</a>
+        <a class="commonTextNav" id="registerLink" href="#register">Register</a>
+    </nav>
+    <main>
+        <!-- First Section -->
+        <section id="books">
+            <!-- Section Heading -->
+            <h2>Books</h2>
+            <table class="outerTable">
+                <!-- Table Heading -->
+                <thead>
+                    <tr>
+                        <th class="tableHeading">Book ID</th>
+                        <th class="tableHeading">Title</th>
+                        <th class="tableHeading">Author</th>
+                        <th class="tableHeading">Genre</th>
+                        <th class="tableHeading">Availability</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <!-- First Row -->
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <table class="innerTable">
+                                <caption>
+                                    Harry Potter
+                                </caption>
+                                <tr>
+                                    <td>Publication Date: 2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 250</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 123-4567890123</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>J.K. Rowling</td>
+                        <td>Fantasy-Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <!-- Second Row -->
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <table class="innerTable">
+                                <caption>
+                                    Sherlock Holmes
+                                </caption>
+                                <tr>
+                                    <td>Publication Date: 1902</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 1000</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 456-1457293561</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Sir Aurthur Conan Doyle</td>
+                        <td>Detective-Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <!-- Third Row -->
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <table class="innerTable">
+                                <caption>
+                                    Feluda Samagra
+                                </caption>
+                                <tr>
+                                    <td>Publication Date: 1975</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 800</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 789-1420543986</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Satyajit Ray</td>
+                        <td>Detective-Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <!-- Fourth Row -->
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <table class="innerTable">
+                                <caption>
+                                    Inner Engineering
+                                </caption>
+                                <tr>
+                                    <td>Publication Date: 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 300</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 740-32158694170</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Sadhguru</td>
+                        <td>Self-Help</td>
+                        <td>Not-Available</td>
+                    </tr>
+                    <!-- Fifth Row -->
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <table class="innerTable">
+                                <caption>
+                                    Kafka on the Shore
+                                </caption>
+                                <tr>
+                                    <td>Publication Date: 2002</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 505</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 437-15243698705</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Haruki Murakami</td>
+                        <td>Magical-Realism</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Second Section -->
+        <section id="register">
+            <h2>Register</h2>
+            <form method="post">
+                <div>
+                    <label for="firstName">First Name:</label> <br />
+                    <input type="text" id="firstName" placeholder="First Name" required />
+                </div>
+                <div>
+                    <label for="lastName">Last Name:</label> <br />
+                    <input type="text" id="lastName" placeholder="Last Name" required />
+                </div>
+                <div>
+                    <label for="dob">Date Of Birth:</label> <br />
+                    <input type="date" id="dob" required />
+                </div>
+                <div>
+                    <label for="age">Age:</label> <br />
+                    <input type="number" id="age" min="5" max="100" placeholder="18" required />
+                </div>
+                <div>
+                    <label for="email">Email:</label> <br />
+                    <input type="email" id="email" placeholder="Email" required />
+                </div>
+                <div>
+                    <label for="password">Password:</label> <br />
+                    <input type="password" id="password" minlength="8" placeholder="Password" required />
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password</label> <br />
+                    <input type="password" id="confirmPassword" minlength="8" placeholder="Confirm Password" required />
+                </div>
+                <div>
+                    <input class="btn" type="button" value="Register" />
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
+

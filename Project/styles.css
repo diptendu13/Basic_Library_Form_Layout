@@ -1,0 +1,135 @@
+/* Body Styling */
+body{
+    background-color: antiquewhite;
+}
+
+/* Navbar Styling */
+.navbar{
+    background-color: black;
+    text-align: right;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    min-width: 856px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.commonTextNav{
+    color: white;
+    font-size: larger;
+}
+#heading{
+    float: left;
+    position: relative;
+    left: 20px; 
+}
+#bookLink{
+    position: relative;
+    right: 50px;
+}
+#registerLink{
+    position: relative;
+    right: 30px;
+}
+
+/* Books Table Styling */
+th, td{
+    padding: 8px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+}
+.outerTable{
+    width: 100%;
+}
+.innerTable{
+    background-color: #E74646;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tableHeading{
+    font-family: 'Crimson Text', serif;
+    font-size: larger;
+}
+section{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 10px auto;
+    min-width: 856px;
+    padding: 20px;
+    background-color: #E74646;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+/* Registration Form Stylings */
+input{
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    padding: 8px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Crimson Text', serif;
+    color: #630000;
+    background-color: antiquewhite;
+}
+.btn{
+    background-color: #850000;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 14px;
+    color: white;
+    font-size: 25px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+/* hovers */
+input:hover{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #630000;
+    padding: 16px;
+    font-size: 30px;
+    background-color: #F6C391;
+    cursor: pointer;
+}
+
+th:hover,td:hover{
+    padding: 12px;
+    font-weight: 700;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+
